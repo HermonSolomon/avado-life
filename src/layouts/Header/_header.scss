@@ -1,0 +1,12 @@
+header {
+   display: flex;
+   justify-content: space-between;
+   background-color: none;
+   position: relative;
+}
+
+.page-book {
+   header {
+      flex-direction: column;
+   }
+}

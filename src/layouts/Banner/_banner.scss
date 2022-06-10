@@ -1,0 +1,99 @@
+@use "../../scss/abstract/index" as *;
+
+.banner-container {
+   position: relative;
+   margin: clamp(3rem, 4vw, 10rem) auto;
+   padding: 1px 0;
+   width: 100%;
+
+   &.banner-images {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      &--banner-join {
+         background-image: url("../../assets/imgs/join-us-page/banner/joinus-banner.png");
+         // @extend .banner-images;
+         background-position: 30% 0;
+         margin: 0;
+         padding-bottom: 10rem;
+         @include media(tablet-pt) {
+            background-position: top;
+            padding: 6% 8% 0 13%;
+         }
+
+         .text-container--bg-none {
+         }
+      }
+
+      &--banner-life {
+         background-image: url("../../assets/imgs/working-life-page/banner/working-life-banner.png");
+         // @extend .banner-images;
+      }
+
+      &--banner-life-secondary {
+         // @extend .banner-images;
+         background-image: url("../../assets/imgs/working-life-page/banner/working-life-banner-secondary.png");
+         background-size: cover;
+      }
+
+      &--banner-growth-secondary {
+         background-image: url("../../assets/imgs/growth-page/banner/middlepage-banner.png");
+         background-position: 20%;
+         @include media(tablet-pt) {
+            background-position: top;
+            padding: 6% 8% 0 13%;
+         }
+         // @extend .banner-images;
+      }
+
+      &--banner-ways-working {
+         background-image: url("../../assets/imgs/ways-working-page/banner/ways-working-banner.png");
+         // @extend .banner-images;
+      }
+   }
+
+   .banner-text {
+      margin-top: 2rem;
+
+      // @include media(mobile-l) {
+      //   left: 3%;
+      // }
+   }
+
+   &__container {
+      @include container();
+      @include flex-column();
+      background: white;
+      padding: $g-elem $g-elem-sm;
+      border-radius: 20px;
+      box-shadow: $box-shadow-dark;
+   }
+
+   &__heading {
+      margin-bottom: $g-elem;
+   }
+
+   &__paragraph {
+      position: relative;
+      font-size: clamp(2rem, 3vw, 4rem);
+      line-height: 1.6;
+      @include media(tablet-l) {
+         font-size: clamp(1.2rem, 2vw, 3.5rem);
+      }
+      font-weight: 700;
+      margin-top: 4rem;
+      margin-bottom: 0;
+      @include media(tablet-l) {
+         margin-top: 0;
+      }
+   }
+
+   &__text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: start;
+      padding: clamp(3rem, 3vw, 6rem);
+   }
+}

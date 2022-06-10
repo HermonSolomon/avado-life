@@ -1,0 +1,149 @@
+@use "../../scss/abstract/index" as *;
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  @include container();
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+  margin-top: 4rem;
+  @include media(tablet-l) {
+    margin-top: 0;
+    bottom: auto;
+    height: auto;
+    position: relative;
+  }
+  &--hide {
+    display: block;
+    @include media(tablet-l) {
+      display: none;
+    }
+  }
+
+  &_container {
+    transform: translateX(-100vw);
+    @include media(tablet-l) {
+      transform: translateX(0);
+    }
+    &--visible {
+      padding: 4rem;
+      width: 80%;
+      margin: auto;
+      transform: translateX(0);
+      box-shadow: 10px 10px 100px black;
+      background-color: white;
+      border-radius: 30px;
+      transition: $transition-med;
+    }
+  }
+
+  @include media(tablet-l) {
+    top: 0;
+    padding: clamp(calc(6rem / 2), 3vw, calc(11rem / 2)) 0;
+    .main-nav_container {
+      @include space-between;
+      width: 100%;
+    }
+  }
+
+  &__list {
+    // Hides the home icon only visible on large viewports
+    &--home {
+      display: none;
+      @include media(tablet-l) {
+        display: flex;
+        .main-nav__link {
+          min-width: auto;
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &--icons {
+      @include space-between();
+      flex-wrap: wrap;
+      @include media(tablet-l) {
+        flex-wrap: nowrap;
+        .main-nav__item {
+          margin-right: clamp(1rem, 2vw, 2.2rem);
+          .main-nav__link {
+            &:hover span {
+              display: block;
+            }
+
+            &:hover img {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__logo {
+    display: none;
+    @include media(tablet-l) {
+      display: inline-block;
+    }
+    img {
+      width: clamp(9rem, 10vw, 16rem);
+      vertical-align: middle;
+    }
+  }
+
+  &__item {
+    @include center();
+    flex: 1 2 50%;
+    margin-bottom: 2rem;
+    @include media(tablet-l) {
+      flex: none;
+      margin-bottom: 0;
+    }
+    img {
+      width: auto;
+      @include media(tablet-l) {
+        width: clamp(5rem, 5vw, 7rem);
+      }
+    }
+
+    span {
+      display: inline-block;
+      max-width: 6ch;
+      font-size: clamp(2rem, 2vw, 2.5rem);
+      color: $text-dark;
+      text-decoration: none;
+      @include media(tablet-l) {
+        display: none;
+        color: white;
+      }
+    }
+    @include media(tablet-l) {
+      &--active {
+        img {
+          display: none;
+          transition: $transition-med;
+        }
+        span {
+          display: inline-block;
+          transition: $transition-med;
+        }
+      }
+    }
+  }
+
+  &__link {
+    @include center();
+    line-height: 1;
+    font-weight: 900;
+    min-width: clamp(6rem, 6.5vw, 13rem);
+    text-align: center;
+    flex-direction: column;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

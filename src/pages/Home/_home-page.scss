@@ -1,0 +1,36 @@
+@use "../../scss/abstract/index" as *;
+
+.home-page {
+   background-image: url("../../assets/imgs/home-page/_homepage-bg.png");
+   overflow-x: hidden;
+   padding: 4rem 0;
+
+   .page__inner {
+      @include flex-column();
+      justify-content: center;
+
+      // .main-nav {
+      //   margin-top: 0;
+      // }
+
+      .content-container {
+         margin: clamp(5rem, 6vw, 10rem) auto;
+         @include media(tablet-l) {
+            margin: clamp(1rem, 3vw, 2rem);
+         }
+      }
+
+      // & > .content-container:first-of-type {
+      //   //   margin: 0;
+      //   margin-top: 5rem;
+
+      //   @include media(tablet-l) {
+      //     margin: 0;
+      //   }
+      // }
+
+      // & > .content-container:last-of-type {
+      //   //   margin: 0;
+      // }
+   }
+}

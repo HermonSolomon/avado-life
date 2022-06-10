@@ -1,0 +1,9 @@
+.logo{
+    &--small{
+        width: 35%;
+        max-width: 170px;
+    }
+    &--large{
+        max-width: 500px;
+    }
+}

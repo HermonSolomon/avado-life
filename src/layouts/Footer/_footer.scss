@@ -1,0 +1,18 @@
+@use "../../scss/abstract/index" as *;
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: $secondary-dark;
+    padding: $g-section-md 0;
+  
+    @include media(tablet-l) {
+      text-align: start;
+      padding: $g-section-ml 0;
+    }
+  
+    &__content {
+      @include container;
+    }
+  }
+  
