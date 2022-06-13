@@ -1,30 +1,30 @@
 @use "../../scss/abstract/index" as *;
 
 .landing-page {
-   background-image: url("../../assets/imgs/landing-page/_landing-page-bg.png");
-   background-position: left center;
+  background-image: url("../../assets/imgs/landing-page/_landing-page-bg.png");
+  background-position: left center;
 
-   @include media(tablet-l) {
-      background-position: center center;
-   }
+  @include media(tablet-l) {
+    background-position: center center;
+  }
 
-   .content-container {
-      margin: 0;
-      justify-content: center;
+  .content-container {
+    margin: 0;
+    justify-content: center;
 
-      .lp-content {
-         width: 100%;
+    .lp-content {
+      width: 100%;
 
-         @include media(tablet-l) {
-            width: 50%;
-         }
-
-         height: 100vh;
-         justify-content: center;
+      @include media(tablet-l) {
+        width: 50%;
       }
-   }
 
-   .page__inner {
-      height: 100%;
-   }
+      height: 100vh;
+      justify-content: center;
+    }
+  }
+
+  .page__inner {
+    height: 100%;
+  }
 }
