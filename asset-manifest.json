@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/avado-life/static/css/main.cb4f9009.css",
-    "main.js": "/avado-life/static/js/main.5b6034a3.js",
+    "main.js": "/avado-life/static/js/main.c94aa789.js",
     "static/media/video.mp4": "/avado-life/static/media/video.61e97ecfabc431c68d91.mp4",
     "static/media/hermon.png": "/avado-life/static/media/hermon.8f3ffbcefed8656c23fd.png",
     "static/media/working-life-banner.png": "/avado-life/static/media/working-life-banner.805ccecf15b5b1e44808.png",
@@ -39,10 +39,10 @@
     "static/media/btn-scroll-top.svg": "/avado-life/static/media/btn-scroll-top.0dcad6168c131b9ee4e8a5e6bce2811b.svg",
     "static/media/quotation_mark_before.svg": "/avado-life/static/media/quotation_mark_before.7c49ba1b97ad0b0601ff.svg",
     "main.cb4f9009.css.map": "/avado-life/static/css/main.cb4f9009.css.map",
-    "main.5b6034a3.js.map": "/avado-life/static/js/main.5b6034a3.js.map"
+    "main.c94aa789.js.map": "/avado-life/static/js/main.c94aa789.js.map"
   },
   "entrypoints": [
     "static/css/main.cb4f9009.css",
-    "static/js/main.5b6034a3.js"
+    "static/js/main.c94aa789.js"
   ]
 }
