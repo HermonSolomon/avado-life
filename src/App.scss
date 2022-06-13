@@ -1,30 +1,30 @@
 // base styles
-@use "./scss/base/typography";
-@use "./scss/base/page";
-@use "./scss/base/gen-container";
-@use "./scss/base/utility-classes";
+@import "./scss/base/typography";
+@import "./scss/base/page";
+@import "./scss/base/gen-container";
+@import "./scss/base/utility-classes";
 
 // components
-@use "./components/Carousel/carousel";
+@import "./components/Carousel/carousel";
 
 // buttons
-@use "./components/Buttons/burger-button";
-@use "./components/Buttons/buttons";
+@import "./components/Buttons/burger-button";
+@import "./components/Buttons/buttons";
 
 // page
-@use "./pages/landingPage/landing-page";
-@use "./pages/Home/home-page";
-@use "./pages/ContentPages/CulturePage/culture-page";
+@import "./pages/landingPage/landing-page";
+@import "./pages/Home/home-page";
+@import "./pages/ContentPages/CulturePage/culture-page";
 // other
-@use "./components/VideoContainer/video-container";
-@use "./components/NavBar/_navbar";
+@import "./components/VideoContainer/video-container";
+@import "./components/NavBar/_navbar";
 // layouts
-@use "./layouts/Footer/footer";
-@use "./layouts/Header/header";
-@use "./layouts/Hero/hero";
-@use "./layouts/Logo/logo";
-@use "./layouts/Banner/banner";
-// @use "./components/Home/HomePage.scss";
-// @use './components/Header/Header.scss';
-// @use "./scss/page.scss";
-// @use "./scss/_variables.scss";
+@import "./layouts/Footer/footer";
+@import "./layouts/Header/header";
+@import "./layouts/Hero/hero";
+@import "./layouts/Logo/logo";
+@import "./layouts/Banner/banner";
+// @import "./components/Home/HomePage.scss";
+// @import './components/Header/Header.scss';
+// @import "./scss/page.scss";
+// @import "./scss/_variables.scss";
