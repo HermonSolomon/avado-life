@@ -12,23 +12,24 @@ const Transparency = () => {
         <li>Lorem ipsum dolor sit.</li>
         <li>Lorem, ipsum dolor.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardOneImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
 
     <div>
       <CardTitle num={2} />
       <ul>
         <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardTwoImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
     <div>
       <CardTitle num={3} />
@@ -37,22 +38,22 @@ const Transparency = () => {
         <li>Lorem ipsum dolor sit.</li>
         <li>Lorem, ipsum dolor.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardThreeImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
     <div>
       <CardTitle num={4} />
       <ul>
         <li>Lorem ipsum dolor sit amet.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardOneImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
 
     <div>
@@ -61,11 +62,11 @@ const Transparency = () => {
         <li>Lorem ipsum dolor sit amet.</li>
         <li>Lorem ipsum dolor sit.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardTwoImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
     <div>
       <CardTitle num={6} />
@@ -74,11 +75,11 @@ const Transparency = () => {
         <li>Lorem ipsum dolor sit.</li>
         <li>Lorem, ipsum dolor.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardThreeImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
     <div>
       <CardTitle num={7} />
@@ -87,22 +88,23 @@ const Transparency = () => {
         <li>Lorem ipsum dolor sit.</li>
         <li>Lorem, ipsum dolor.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardOneImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
     <div>
       <CardTitle num={8} />
       <ul>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit..</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
       </ul>
-      <div className="card-img">
+      {/* <div className="card-img">
         <div className="img-wrapper">
           <img src={cardTwoImg} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>,
   ];
 };
